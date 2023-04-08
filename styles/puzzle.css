@@ -1,0 +1,75 @@
+.board-container {
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+    width: 44vw;
+    height: 77vw;
+    border: 2px solid black;
+
+    margin-top: 20px;
+    display: grid;
+
+    grid-template-columns: repeat(4, 11vw);
+    grid-template-rows: repeat(7, 11vw);
+}
+
+.board .tile {
+    width: 11vw;
+    height: 11vw;
+
+    border: 0.5px solid lightblue;
+    box-sizing: border-box;
+}
+
+.pieces-container {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.pieces {
+    width: 77vw;
+    height: 44vw;
+    border: 2px solid black;
+
+    display: grid;
+
+    grid-template-columns: repeat(7, 11vw);
+    grid-template-rows: repeat(4, 11vw);
+}
+
+.pieces .tile {
+    width: 11vw;
+    height: 11vw;
+
+    border: 0.5px solid lightblue;
+    box-sizing: border-box;
+}
+
+.board .tile.finished {
+    border: none;
+}
+
+.pieces .tile.finished {
+    border: none;
+}
+
+.droppable-highlight {
+    background-color: #e8ffff;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: pan-x, pan-y;
+}
+
+html, body {
+    overflow: hidden;
+}
