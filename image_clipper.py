@@ -3,7 +3,7 @@ from PIL import Image
 crop_height = 7
 crop_width = 4
 
-img = Image.open("src/moon_74.2.jpg")
+img = Image.open("src/test11.jpg")
 width, height = img.size
 block_size, crop_size = (width, crop_width) if width / height <= crop_width / crop_height else (height, crop_height)
 piece_size = block_size // crop_size
